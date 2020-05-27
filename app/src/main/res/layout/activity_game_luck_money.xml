@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameLuckMoney">
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="409dp"
+        android:layout_height="601dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/TotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter the total amount of money you have"
+            android:inputType="phone" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:gravity="center_vertical"
+                android:text="Risk Factor"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/DoubleMoney"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Double the money (3 Option avaliable of dice)" />
+
+            <RadioButton
+                android:id="@+id/ThriceMoney"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Thrice the money (2 Option avaliable of dice)" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/MoneyOnRisk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter the money applied on risk factor"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/OptionsShow"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/Dice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="1"
+                android:text="One" />
+
+            <CheckBox
+                android:id="@+id/Dice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                android:text="Two" />
+
+            <CheckBox
+                android:id="@+id/Dice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="3"
+                android:text="Three" />
+
+            <CheckBox
+                android:id="@+id/Dice4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="4"
+                android:text="Four" />
+
+            <CheckBox
+                android:id="@+id/Dice5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="5"
+                android:text="Five" />
+
+            <CheckBox
+                android:id="@+id/Dice6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="6"
+                android:text="Six" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/GenerateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/holo_red_dark"
+                android:text="Generate Lucky Number"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LuckyNumberShown"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:hint="Lucky Number will  shown here"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/UpdateButton"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:text="Update the Money" />
+
+            <Button
+                android:id="@+id/ExitButton"
+                android:layout_width="76dp"
+                android:layout_height="57dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_light"
+                android:text="Restart the game" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

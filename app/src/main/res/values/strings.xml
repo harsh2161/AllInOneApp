@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AllInOneApp</string>
+    <string name="button_restart_the_chess_game">Button Restart The Chess Game</string>
+</resources>
